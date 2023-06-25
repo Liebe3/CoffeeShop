@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b098b18a13.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/contact.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- navigation start -->
+    <nav>
+      <div class="logo">Logo</div>
+      <div class="nav-links" id="nav-links">
+        <ul class="mainMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <i id="xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </div>
+      <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <div class="search">
+        <div class="search-container">
+          <input id="search-bar" class="search-bar" type="text" placeholder="Search" spellcheck="false">
+          <div id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="fa-cart-shopping-container">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./cart.html"> <div id="cart" class="add-to-cart">0</div></a>
+        </div>
+      </div>
+    </nav>
+</header>
+    <!-- navigation end -->
+
+    <section>
+        <h1>Get in touch with us today!</h1>
+    </section>
+
+    <main>
+      <div class="contact-left">
+        <div class="bottom-left">
+          <img src="./contact_img/Calling_Monochromatic.svg" alt="">
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="form" action="https://formspree.io/f/mnqykezk" method="POST">
+          <h2>Message Us</h2>
+          <div class="name-fields">
+          <div class="name">
+            <label>Name:</label><br>
+            <input type="text" value required>
+          </div>
+          <div class="email">
+            <label>Email:</label><br>
+            <input name="email" type="email" value required>
+          </div>
+          </div><br>
+          <label>Subject:</label><br>
+          <input class="subject" type="text"><br><br>
+          <textarea placeholder="Message" value required></textarea><br>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-lower"> 
+        <div class="icons">
+          <a href="https://github.com/Liebe3"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/qweqwetikorts"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@jaaahs2pid?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/dyaalenzxc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:jallenqweqwe123@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="ownership"> ©2023 by Jallen Portugal. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="./coffee.js/nav.js"></script>
+  <script src="./coffee.js/cart.js"></script>
+</body>
+</html>

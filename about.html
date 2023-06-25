@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b098b18a13.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/about.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- navigation start -->
+    <nav>
+      <div class="logo">Logo</div>
+      <div class="nav-links" id="nav-links">
+        <ul class="mainMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <i id="xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </div>
+      <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <div class="search">
+        <div class="search-container">
+          <input id="search-bar" class="search-bar" type="text" placeholder="Search" spellcheck="false">
+          <div id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="fa-cart-shopping-container">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./cart.html"> <div id="cart" class="add-to-cart">0</div></a>
+        </div>
+      </div>
+    </nav>
+  <!-- navigation end -->
+  <section>
+    <div class="clock-container">
+      <h1>OPENING SOON!</h1>
+      <div id="clock"></div>
+    </div>
+  </section>
+</header>
+<script src="./coffee.js/nav.js"></script>
+<script src="./coffee.js/about.js"></script>
+<script src="./coffee.js/cart.js"></script>
+</body>
+</html>

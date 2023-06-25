@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b098b18a13.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/coffee.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <div class="preloader">
+  <div class="loadingspinner">
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="square5"></div>
+  </div>
+</div>
+  <!-- Header start -->
+  <header>
+  <nav>
+    <div class="logo" id="logo">Logo</div>
+    <div class="nav-links" id="nav-links">
+      <ul class="mainMenu">
+        <li><a href="./index.html" target="_blank">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      <i id="xmark" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </div>
+    <i id="bars" class="fa-solid fa-bars" onclick="openmenu()"></i>
+    <div class="search">
+      <div class="search-container">
+        <input id="search-bar" class="search-bar" type="text" placeholder="Search" spellcheck="false">
+        <div id="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="fa-cart-shopping-container">
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="./cart.html"> <div id="cart" class="add-to-cart">0</div></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+<h1>All you need to feel better is coffee.</h1>
+<a href="./products.html"><button class="order-button">Order Now</button></a>
+</div>
+</header>
+  <!-- Header end -->
+
+  <!-- Product start -->
+<main>
+  <h1 class="products">Product</h1>
+  <div class="product-container">
+    <div class="coffee">
+      <img class="coffee-img" src="./home_Img/coffee1-transformed.jpeg" alt="">
+      <h2 class="coffee-name">Espresso</h2>
+      <div class="class">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iusto nam atque ut! Quo rem quidem voluptatibus rerum minima exercitationem non ipsa quod alias, laudantium doloribus adipisci ea saepe animi.</p>
+    </div>
+    <a href="./products.html"><button class="buy-btn">Buy Now</button></a>
+    </div>
+    <div class="coffee">
+      <img class="coffee-img1" src="./home_Img/coffee2-transformed.jpeg" alt="">
+      <h2 class="coffee-name">Americano</h2>
+      <div class="class">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iusto nam atque ut! Quo rem quidem voluptatibus rerum minima exercitationem non ipsa quod alias, laudantium doloribus adipisci ea saepe animi.</p>
+    </div>
+    <a href="./products.html"><button class="buy-btn">Buy Now</button></a>
+    </div>
+    <div class="coffee">
+      <img class="coffee-img" src="./home_Img/coffee4-transformed.jpeg" alt="">
+      <h2 class="coffee-name">Aeropress</h2>
+      <div class="class">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iusto nam atque ut! Quo rem quidem voluptatibus rerum minima exercitationem non ipsa quod alias, laudantium doloribus adipisci ea saepe animi.</p>
+    </div>
+      <a href="./products.html"><button class="buy-btn">Buy Now</button></a>
+    </div>
+  </div>
+</main>
+    <!--Product end  -->
+    <!-- About start -->
+    <div class="about-div">
+    <h1 class="abouts">About</h1>
+  </div>
+<section class="about-container">
+  <div class="about-image-container">
+    <img class="about-image" src="./home_Img/kupi-transformed-removebg-preview.png" alt="">
+  </div>
+  <div class="about">
+    <p class="about-description">
+      We are a team of passionate coffee enthusiasts dedicated to sharing our love of black coffee with the world. Our mission is to provide you with high-quality black coffee beans and a wealth of information about this beloved beverage.<br></br>
+
+We understand that black coffee is not just a drink, but a way of life. We know that for many people, a cup of black coffee is the perfect way to start the day or to unwind after a long day. That's why we strive to provide you with the best possible coffee experience, from the moment you place your order to the first sip of your freshly brewed cup.<br> </br>
+
+Our team has carefully curated a selection of the finest black coffee beans from around the world. We believe that the best coffee comes from small, independent farmers who take pride in their craft. That's why we source our beans from farmers who are committed to sustainable and ethical farming practices.<br></br>
+
+In addition to our selection of black coffee beans, we also offer a range of brewing equipment and accessories to help you make the perfect cup of coffee. From French presses to pour-over brewers, we have everything you need to make your coffee experience even better.<br></br>
+
+At our black coffee website, we believe that coffee is not just a beverage, but a way of life. We are committed to helping you discover the joy of black coffee and to providing you with the tools you need to brew the perfect cup every time. Thank you for choosing us as your coffee partner!<br></br>
+    </p>
+  </div>
+</section>
+<!-- Contact us start -->
+<h1 class="contact">Contact</h1>
+<div class="contact-container">
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form class="contact-message" action="https://formspree.io/f/mnqykezk" method="POST">
+      <label class="email-label">Email</label><br></br>
+      <input id="email" name="email" class="email-input" type="email" placeholder="abc@gmail" required><br></br>
+      <label class="message-label">Message</label><br></br>
+      <textarea id="message-input" class="message-input" rows="6" placeholder="message" required></textarea>
+      <button id="submit-button" class="submit-button">Submit</button>
+    </form>
+      </div>
+      <div class="contact-img">
+        <img class="contact-coffee-img" src="./home_Img/cupu-transformed-removebg-preview.png" alt="">
+      </div>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1679047743">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+</div>
+  <!-- contact end -->
+<!-- footer start -->
+  <footer>  
+      <!-- footer uuper start -->
+    <div class="footer-upper-container">
+    <div class="footer-logo">
+      <h2>Logo</h2>
+      <h6>SLOGAN COMPANY</h6>
+    </div>
+    <div class="footer-second">
+      <p>Submit a Ticket</p>
+    </div>
+    <div class="footer-fourth">
+      <p>Support</p>
+    </div>
+    <div class="footer-fifth">
+        <p>Home</p>
+        <p>Products</p>
+        <p>About Us</p>
+        <p>Contact Us</p>
+    </div>
+  </div>
+      <!-- footer upper end -->
+  <marquee></marquee>
+      <!-- footer lower start -->
+  <div class="footer-lower"> 
+    <div class="icons">
+      <a href="https://github.com/Liebe3"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.facebook.com/qweqwetikorts"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@jaaahs2pid?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/dyaalenzxc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:jallenqweqwe123@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    <a href="#logo"><i class="fa-solid fa-chevron-up"></i></a>
+  </div>
+      <!-- footer lower end -->
+  <p class="ownership"> ©2023 by Jallen Portugal. All rights reserved.</p>
+  </footer>
+      <!-- footer end -->
+      <script src="./coffee.js/nav.js"></script>
+      <script>
+        $(window).on("load", function() {
+          // Add a delay of 1000 milliseconds (1 second)
+          setTimeout(function() {
+            $(".preloader").fadeOut();
+          }, 2500);
+        });
+      </script>
+      <script src="./coffee.js/index.js"></script>
+      <script src="./coffee.js/cart.js"></script>
+</body>
+</html>
