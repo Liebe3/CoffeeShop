@@ -246,10 +246,6 @@ input{
     letter-spacing: 2px;
   }
 
-  .search{
-    display: none;
-  }
-
   .nav-links {
     position: absolute;
     background: #B85C38;
@@ -282,10 +278,21 @@ input{
   .logo{
     width: 150px;
   }
-  .search{
+
+  .search-container{
     display: none;
   }
+  
+  .fa-cart-shopping-container{
+    position: absolute;
+    right: 100px;
+    top: 17px;
+  }
 
+  .fa-cart-shopping{
+    font-size: 18px;
+  }
+  
   .fa-bars{
     position: absolute;
     display: flex;
@@ -322,6 +329,13 @@ input{
     right: 0;
     margin: 0 auto;
     transform: none;
+  }
+
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    
   }
 }
 

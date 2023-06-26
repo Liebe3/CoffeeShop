@@ -217,8 +217,18 @@ input{
     width: 150px;
   }
 
-  .search{
+  .search-container{
     display: none;
+  }
+
+  .fa-cart-shopping-container{
+    position: absolute;
+    right: 100px;
+    top: 17px;
+  }
+
+  .fa-cart-shopping{
+    font-size: 18px;
   }
 
   .fa-bars{
@@ -233,20 +243,20 @@ input{
   }
 
   .fa-xmark{
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 6;
-  border: 2px solid white;
-  background: #FFF8EA;
-  border-radius: 50%;
-  font-size: 15px;
-  height: 30px;
-  width: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #B85C38;
-  display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 6;
+    border: 2px solid white;
+    background: #FFF8EA;
+    border-radius: 50%;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #B85C38;
+    display: flex;
   } 
 }
 
@@ -277,6 +287,15 @@ input{
     margin-right: 13.438rem;
     outline: none;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    
   }
 }
 

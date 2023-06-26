@@ -216,8 +216,19 @@ input{
   .logo{
     width: 150px;
   }
-  .search{
+
+  .search-container{
     display: none;
+  }
+
+  .fa-cart-shopping-container{
+    position: absolute;
+    right: 100px;
+    top: 17px;
+  }
+
+  .fa-cart-shopping{
+    font-size: 18px;
   }
 
   .fa-bars{
@@ -277,6 +288,15 @@ input{
     margin-right: 13.438rem;
     outline: none;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    
   }
 }
 
